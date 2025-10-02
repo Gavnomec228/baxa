@@ -57,7 +57,7 @@ main {
     padding: 2rem;
 }
 
-.menuspan, .cartspan, .biospan, .spanadress {
+.menuspan, .cartspan, .biospan, .spanadress, .spanrev {
     display: block;
     text-align: center;
     font-size: 2.5rem;
@@ -83,7 +83,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    width: 50%;
+    max-width: 50%;
 }
 
 .shava {
@@ -308,6 +308,11 @@ main {
     border: 3px solid var(--accent-color);
 }
 
+.baxaphoto:hover {
+    width: 400px;
+    height: 400px;
+}
+
 .biobaxa {
     max-width: 600px;
     margin: 0 auto;
@@ -321,6 +326,12 @@ main {
     margin: 3rem 0;
 }
 
+.adresinfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 iframe {
     display: block;
     margin: 1.5rem auto;
