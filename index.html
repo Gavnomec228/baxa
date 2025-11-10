@@ -1,130 +1,203 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ШАУРМА-СИТИ</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <link rel="icon" href="./image/logo.png">
+  </head>
+  <body>
     <header>
-        <div class="logo"><img src="./image/logo.png" alt="" width="100px" height="50px"></div>
-        <ul class="nav">
-            <li class="navli"><a href="#menu">Что можно заказать?</a></li>
-            <li class="navli"><a href="#bio">Кто будет готовить?</a></li>
-            <li class="navli"><a href="#adress">Где нас найти?</a></li>
-            <li class="navli"><a href="#reviews">Что о нас говорят?</a></li>
-        </ul>
+      <div class="logo">
+        <img src="./image/logo.png" alt="" width="100px" height="50px" />
+      </div>
+      <ul class="nav">
+        <li class="navli"><a href="#menu">Что можно заказать?</a></li>
+        <li class="navli"><a href="#bio">Кто будет готовить?</a></li>
+        <li class="navli"><a href="#adress">Где нас найти?</a></li>
+        <li class="navli"><a href="#reviews">Что о нас говорят?</a></li>
+      </ul>
     </header>
     <main>
-        <div class="banner">
-            <span class="hallo">ДОБРО ПОЖАЛОВАТЬ!</span>
-            <span class="bye">ВАШУ ЛЮБИМУЮ ШАУРМУ ТЕПЕРЬ МОЖНО ЗАКАЗАТЬ В ДВА КЛИКА И БЕЗ ОЧЕРЕДИ!</span>
-            <button class="click">ЗАКАЗАТЬ</button>
-        </div>
-        <div class="top" id="menu">
-            <div class="menu">
-                <span class="menuspan">Меню</span>
-                <div class="menublock">
-                    <div class="shavarm">
-                        <div class="shava" data-name="Классическая" data-price="220" data-base-price="220">
-                            <img src="./image/shava1.png" alt="" class="imgshava">
-                            <span class="nameshava">Классическая</span>
-                            <span class="cost">220 руб.</span>
-                            <button type="button" class="customize-btn">Выбрать ингредиенты</button>
-                        </div>
-                        <div class="shava" data-name="Классическая в сырном лаваше" data-price="220" data-base-price="220">
-                            <img src="./image/shava2.png" alt="" class="imgshava">
-                            <span class="nameshava">Классическая в сырном лаваше</span>
-                            <span class="cost">220 руб.</span>
-                            <button type="button" class="customize-btn">Выбрать ингредиенты</button>
-                        </div>
-                        <div class="shava" data-name="Турецкая" data-price="230" data-base-price="230">
-                            <img src="./image/shava3.png" alt="" class="imgshava">
-                            <span class="nameshava">Турецкая</span>
-                            <span class="cost">230 руб.</span>
-                            <button type="button" class="customize-btn">Выбрать ингредиенты</button>
-                        </div>
-                        <div class="shava" data-name="Открытая" data-price="300" data-base-price="300">
-                            <img src="./image/shava4.png" alt="" class="imgshava">
-                            <span class="nameshava">Открытая</span>
-                            <span class="cost">300 руб.</span>
-                            <button type="button" class="customize-btn">Выбрать ингредиенты</button>
-                        </div>
-                    </div>
-                    <div class="cart">
-                        <span class="cartspan">Корзина</span>
-                        <div class="cart-items"></div>
-                        <div class="cart-total">Итого: 0 руб.</div>
-                        <button class="order-button">Заказать</button>
-                    </div>
-                </div>
+      <div class="banner">
+        <span class="hallo">ДОБРО ПОЖАЛОВАТЬ!</span>
+        <span class="bye"
+          >ВАШУ ЛЮБИМУЮ ШАУРМУ ТЕПЕРЬ МОЖНО ЗАКАЗАТЬ В ДВА КЛИКА И БЕЗ
+          ОЧЕРЕДИ!</span
+        >
+        <button class="click">ЗАКАЗАТЬ</button>
+      </div>
+      <div class="top" id="menu">
+        <div class="menu">
+          <span class="menuspan">Меню</span>
+          <div class="menublock">
+            <div class="shavarm">
+              <div
+                class="shava"
+                data-name="Классическая"
+                data-price="220"
+                data-base-price="220"
+              >
+                <img src="./image/shava1.png" alt="" class="imgshava" />
+                <span class="nameshava">Классическая</span>
+                <span class="cost">220 руб.</span>
+                <button type="button" class="customize-btn">
+                  Выбрать ингредиенты
+                </button>
+              </div>
+              <div
+                class="shava"
+                data-name="Классическая в сырном лаваше"
+                data-price="220"
+                data-base-price="220"
+              >
+                <img src="./image/shava2.png" alt="" class="imgshava" />
+                <span class="nameshava">Классическая в сырном лаваше</span>
+                <span class="cost">220 руб.</span>
+                <button type="button" class="customize-btn">
+                  Выбрать ингредиенты
+                </button>
+              </div>
+              <div
+                class="shava"
+                data-name="Турецкая"
+                data-price="230"
+                data-base-price="230"
+              >
+                <img src="./image/shava3.png" alt="" class="imgshava" />
+                <span class="nameshava">Турецкая</span>
+                <span class="cost">230 руб.</span>
+                <button type="button" class="customize-btn">
+                  Выбрать ингредиенты
+                </button>
+              </div>
+              <div
+                class="shava"
+                data-name="Открытая"
+                data-price="300"
+                data-base-price="300"
+              >
+                <img src="./image/shava4.png" alt="" class="imgshava" />
+                <span class="nameshava">Открытая</span>
+                <span class="cost">300 руб.</span>
+                <button type="button" class="customize-btn">
+                  Выбрать ингредиенты
+                </button>
+              </div>
             </div>
+            <div class="cart">
+              <span class="cartspan">Корзина</span>
+              <div class="cart-items"></div>
+              <div class="cart-total">Итого: 0 руб.</div>
+              <button class="order-button">Заказать</button>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Модальное окно для выбора ингредиентов -->
-        <div id="ingredientsModal" class="modal-overlay">
-            <div class="modal-content">
-                <h3>Состав шаурмы</h3>
-                <div class="ingredients-list">
-                    <div class="ingredient-item">
-                        <span>Картофель фри (+20 руб.)</span>
-                        <input type="checkbox" class="ingredient-checkbox" data-ingredient="Картофель фри" data-price="20">
-                    </div>
-                    <div class="ingredient-item">
-                        <span>Маринованый лук (+20 руб.)</span>
-                        <input type="checkbox" class="ingredient-checkbox" data-ingredient="Лук" data-price="20">
-                    </div>
-                    <div class="ingredient-item">
-                        <span>Халапеньо (+20 руб.)</span>
-                        <input type="checkbox" class="ingredient-checkbox" data-ingredient="Халапеньо" data-price="20">
-                    </div>
-                    <div class="ingredient-item">
-                        <span>Гранатовый соус (+20 руб.)</span>
-                        <input type="checkbox" class="ingredient-checkbox" data-ingredient="Гранатовый соус" data-price="20">
-                    </div>
-                </div>
-                <div class="selected-ingredients">
-                    <h4>Выбранные ингредиенты:</h4>
-                    <ul id="selectedIngredientsList"></ul>
-                </div>
-                <div class="modal-total">
-                    Итого: <span id="modalTotalPrice">220</span> руб.
-                </div>
-                <div class="modal-buttons">
-                    <button id="addToCartModal" class="add-to-cart-btn">Добавить в корзину</button>
-                    <button id="closeModal" class="close-modal-btn">Отмена</button>
-                </div>
+      <!-- Модальное окно для выбора ингредиентов -->
+      <div id="ingredientsModal" class="modal-overlay">
+        <div class="modal-content">
+          <h3>Состав шаурмы</h3>
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span>Картофель фри (+20 руб.)</span>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                data-ingredient="Картофель фри"
+                data-price="20"
+              />
             </div>
+            <div class="ingredient-item">
+              <span>Маринованый лук (+20 руб.)</span>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                data-ingredient="Лук"
+                data-price="20"
+              />
+            </div>
+            <div class="ingredient-item">
+              <span>Халапеньо (+20 руб.)</span>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                data-ingredient="Халапеньо"
+                data-price="20"
+              />
+            </div>
+            <div class="ingredient-item">
+              <span>Гранатовый соус (+20 руб.)</span>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                data-ingredient="Гранатовый соус"
+                data-price="20"
+              />
+            </div>
+          </div>
+          <div class="selected-ingredients">
+            <h4>Выбранные ингредиенты:</h4>
+            <ul id="selectedIngredientsList"></ul>
+          </div>
+          <div class="modal-total">
+            Итого: <span id="modalTotalPrice">220</span> руб.
+          </div>
+          <div class="modal-buttons">
+            <button id="addToCartModal" class="add-to-cart-btn">
+              Добавить в корзину
+            </button>
+            <button id="closeModal" class="close-modal-btn">Отмена</button>
+          </div>
         </div>
+      </div>
 
-        <!-- Остальная часть HTML остается без изменений -->
-        <div class="bio" id="bio">
-            <span class="biospan">Наш шаурмист</span>
-            <img src="./image/baxa2.png" alt="" class="baxaphoto">
-            <div class="biobaxa">
-                <p>Самую вкусную шаурму для вас будет готовить лучший повар из солнечного Таджикистана, Кахрамон Ташрипов</p>
-            </div>
+      <!-- Остальная часть HTML остается без изменений -->
+      <div class="bio" id="bio">
+        <span class="biospan">Наш шаурмист</span>
+        <img src="./image/baxa2.png" alt="" class="baxaphoto" />
+        <div class="biobaxa">
+          <p>
+            Самую вкусную шаурму для вас будет готовить лучший повар из
+            солнечного Таджикистана, Кахрамон Ташрипов
+          </p>
         </div>
-        <div class="adress" id="adress">
-            <span class="spanadress">Наш адрес</span>
-            <div class="adresinfo">
-                <span class="geo">Тверь, Московская 1</span>
-                <span class="geo">8-777-777-77-77</span>
-                <span class="geo">Ежедневно, 8:00-20:00</span>
-            </div>
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9418680dfb52448277ceb007215ed82e607b576d92a7faee3961fb1ed7cbdfb2&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+      </div>
+      <div class="adress" id="adress">
+        <span class="spanadress">Наш адрес</span>
+        <div class="adresinfo">
+          <span class="geo">Тверь, Московская 1</span>
+          <span class="geo">8-777-777-77-77</span>
+          <span class="geo">Ежедневно, 8:00-20:00</span>
         </div>
-        <div class="reviews" id="reviews">
-            <span class="spanrev">Отзывы</span>
-            <script src="https://res.smartwidgets.ru/app.js" defer></script>
-            <div class="sw-app" data-app="b3cb97996a50e3376c4b3a260b072ab4"></div>
-        </div>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A9418680dfb52448277ceb007215ed82e607b576d92a7faee3961fb1ed7cbdfb2&amp;source=constructor"
+          width="500"
+          height="400"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="reviews" id="reviews">
+        <span class="spanrev">Отзывы</span>
+        <div class="sw-app"></div>
+      </div>
+
+      <div class="add-review" id="addReview">
+        <h3>Оставить отзыв</h3>
+        <form id="reviewForm">
+          <input type="text" id="reviewName" placeholder="Ваше имя" required />
+          <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </main>
-    <footer>
-        ШАУРМА-СИТИ @ Все права защищены.
-    </footer>
+    <footer>ШАУРМА-СИТИ @ Все права защищены.</footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
