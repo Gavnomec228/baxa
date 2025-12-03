@@ -812,3 +812,38 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  background: white;
+  width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.review-content {
+  flex: 1;
+}
+.review-date {
+  color: #666;
+  font-size: 0.8rem;
+  text-align: right;
+  min-width: 120px;
+}
+.add-to-cart {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.add-to-cart:hover {
+  background-color: #ff5252;
+}
